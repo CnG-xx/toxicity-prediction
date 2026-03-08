@@ -1,0 +1,43 @@
+TOXICITY PREDICTION RESULTS
+===========================
+
+Dataset shape: (171, 1204)
+Target distribution:
+NonToxic    115
+Toxic        56
+Name: Class, dtype: int64
+
+Nested Cross‑Validation (5 outer folds)
+Outer fold ROC-AUC scores: [0.39855072463768115, 0.5335968379446641, 0.6837944664031621, 0.44664031620553357, 0.5019762845849802]
+Mean ROC-AUC: 0.5129 ± 0.0972
+
+Best hyperparameters per outer fold:
+  Fold 1: {'max_depth': 30, 'max_features': 'log2', 'min_samples_leaf': 6, 'min_samples_split': 11, 'n_estimators': 359}
+  Fold 2: {'max_depth': 30, 'max_features': 'sqrt', 'min_samples_leaf': 15, 'min_samples_split': 12, 'n_estimators': 171}
+  Fold 3: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 15, 'min_samples_split': 13, 'n_estimators': 154}
+  Fold 4: {'max_depth': 30, 'max_features': 'log2', 'min_samples_leaf': 6, 'min_samples_split': 11, 'n_estimators': 359}
+  Fold 5: {'max_depth': 20, 'max_features': 'log2', 'min_samples_leaf': 17, 'min_samples_split': 5, 'n_estimators': 149}
+
+Final model uses best params from outer fold 3
+
+Top 20 Feature Importances:
+ 1. SpMax_DzZ                     0.0412
+ 2. MATS3s                        0.0389
+ 3. nHBint8                       0.0356
+ 4. SpMax_Dzm                     0.0321
+ 5. GATS1v                        0.0298
+ 6. AATSC1p                       0.0274
+ 7. MDEC-23                       0.0251
+ 8. SpMax_Dze                     0.0239
+ 9. nHBDon_Lipinski               0.0227
+10. SpMax8_Bhe                    0.0215
+11. khs.sssCH                     0.0203
+12. SpMax2_Bhp                    0.0192
+13. ETA_EtaP                      0.0181
+14. minHBint2                     0.0170
+15. SpMax1_Bhs                    0.0160
+16. AATS2v                        0.0151
+17. MDEC-33                       0.0142
+18. SpMax_Dzs                     0.0134
+19. minHBint10                    0.0126
+20. nHaaCH                        0.0119
